@@ -10,28 +10,18 @@ import ReadMoreIcon from '@mui/icons-material/ReadMore';
 function PatientRecords() {
     
     const [query,setQuery] = useState("");
-    const searchKeys = ["patient_fname","patient_fname","patient_id","patient_gender","patient_occupation"]
+    // const searchKeys = ["patient_fname","patient_fname","patient_id","patient_gender","patient_occupation"]
 
 
-    const search = (data)=>{
-        return data.filter((patient)=>
-        searchKeys.some((key)=>
-        patient[key].toLowerCase().includes(query))
-        );
-    }
+    // const search = (data)=>{
+    //     return data.filter((patient)=>
+    //     searchKeys.some((key)=>
+    //     patient[key].toLowerCase().includes(query))
+    //     );
+    // }
     var today = new Date();
     var thisYear = today.getFullYear();
-
-    const age = patients.map((patient)=>(
-        thisYear-parseInt(patient.patient_dob.substring(0,4))
-    ))
-    // const getAge = (year)=>(
-    //     thisYear-useryear
-    // )
         
-
-   // console.log(dob)
-
   return (
     <div className='container'>
         <div className="search">
@@ -48,7 +38,7 @@ function PatientRecords() {
         <div className='record-list'>
             <ul>
                 { 
-                    search(patients)
+                    {/* search(patients) */}
                     .map((patient)=>(
 
                     <li key ={patient.patient_id} className="patients_list">

@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     gap:3.5rem;
     list-style: none;
+    justify-content: center;
 
 }
 .patient{
@@ -59,18 +60,17 @@
     height: 50px;
 }
 .image-container > img{
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
+    width: 120px !important;
+    height: 120px !important;
+    object-fit:cover;
 }
 .patient-bottom{
-    padding: 8px;
+    padding: 5px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 29px;
-    height: fit-content;
+    /* line-height: 20px; */
     color: #696464;
     
 }
