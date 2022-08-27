@@ -2,7 +2,14 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import '../styles/patient.css'
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
+import {useNavigate} from 'react-router-dom'
 function Patient() {
+    const navigate = useNavigate()
+
+    const goToDetails=(event)=>{
+        event.stopPropagation()
+        navigate('/')
+    }
   return (
     <div className='patient'>
         <div className='image-container'>
@@ -15,7 +22,11 @@ function Patient() {
             <h4>Learner</h4>
         </div>
         <div className='btn-container'>
-            <Button endIcon={<ReadMoreIcon/>} className='viewMoreBtn'>View</Button>
+            <Button 
+            endIcon={<ReadMoreIcon/>} 
+            className='viewMoreBtn'
+            onClick={(e)=>goToDetails(e)}
+            >View</Button>
         </div>
     </div>
   )

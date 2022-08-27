@@ -17,9 +17,7 @@ function PatientRecords() {
             <Patient/>
             <Patient/>
             <Patient/>
-            
         </div></div>
   )
 }
-
 export default PatientRecords

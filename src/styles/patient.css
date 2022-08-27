@@ -2,10 +2,11 @@
     width: 200px;
     height: 315px;
     display: flex;
-    
     flex-direction: column;
-    border:1px solid whitesmoke
+    border:1px solid whitesmoke;
+    transition: all ease-in-out 0.1s;
 }
+
 
 .image-container{
     flex:1;
@@ -22,9 +23,7 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 29px;
-        /* identical to box height */
-    
-    
+
         color: #696464;
     
 }
@@ -33,7 +32,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 8px;
-    height: 35px;
+    height: 40px;
 }
 .viewMoreBtn{
         background: #129610 !important;
@@ -44,3 +43,6 @@
         font-weight: 500 !important;
         font-size: 12px;
 }
+/* .viewMoreBtn:hover > patient{
+    transform: scale(0.98);
+} */

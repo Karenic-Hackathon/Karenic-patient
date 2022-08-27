@@ -3,6 +3,7 @@ import '../styles/home.css'
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import HealthService from '../components/HealthService';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import {useNavigate} from 'react-router-dom'
 export default function Home() {
     const navigate = useNavigate()
@@ -18,6 +19,10 @@ export default function Home() {
                 <div className='report-incident'>
                     <ReportProblemIcon fontSize='large' />
                     <h2>Report incident</h2>
+                </div>
+                <div className='report-incident'>
+                    <LocalHospitalIcon fontSize='large' />
+                    <h2>Doctor Dashboard</h2>
                 </div>
             </div>
         </div>
