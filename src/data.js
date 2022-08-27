@@ -9,7 +9,7 @@ export const patients = [
         "patient_home_address":"",
         "patient_frequent_location":"",
         "patient_occupation":"leaner",
-        "patiennt_profile_image":"",
+        "patient_profile_image":"../assets/images/karenic-logo.png",
         "patient_diagnosis":["asthma","high blood pressure"],
         "patient_visit_history":{
             "dates":[],
@@ -20,7 +20,7 @@ export const patients = [
         }
     },
     {
-        "patient_id":"777777777777",
+        "patient_id":"9701161056882",
         "patient_fname":"Felix",
         "patient_dob":"2000/08/10",
         "patient_lname":"Washington",
@@ -29,7 +29,7 @@ export const patients = [
         "patient_home_address":"",
         "patient_frequent_location":"",
         "patient_occupation":"teacher",
-        "patiennt_profile_image":"",
+        "patient_profile_image":"../assets/images/karenic-logo.png",
         "patient_diagnosis":["low blood pressure","TB"],
         "patient_visit_history":{
             "dates":[],

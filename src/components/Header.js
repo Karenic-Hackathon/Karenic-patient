@@ -11,14 +11,7 @@ export default function Header() {
             </div>
             <h2 className='brand-name'>Karenic</h2>
         </div>
-        {/* <div className='header-right'> */}
-            <div className='user-container'>
-                <div className='user-avatar'>
-                    <Avatar>B</Avatar>
-                </div>
-                <h2>Blessing Hove</h2>
-            </div>
-        {/* </div> */}
+
     </div>
   )
 }
