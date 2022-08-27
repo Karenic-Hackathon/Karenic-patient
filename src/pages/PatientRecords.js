@@ -10,7 +10,15 @@ import ReadMoreIcon from '@mui/icons-material/ReadMore';
 function PatientRecords() {
     
     const [query,setQuery] = useState("");
-
+    const search = (data)=>{
+        return data.filter((patient)=>
+    patient.patient_fname.toLowerCase().includes(query)||
+    patient.patient_lname.toLowerCase().includes(query)||
+    patient.patient_id.includes(query)||
+    patient.patient_gender.toLowerCase().includes(query)||
+    patient.patient_occupation.toLowerCase().includes(query));
+    }
+   
   return (
     <div className='container'>
         <div className="search">
@@ -26,13 +34,10 @@ function PatientRecords() {
         <div className='record-list'>
             <ul>
                 { 
-                    patients.filter((patient)=>
-                    patient.patient_id.toLowerCase()
-                    .includes(query))
+                    search(patients)
                     .map((patient)=>(
 
                     <li key ={patient.patient_id} className="patients_list">
-                    
                         <div className='patient'>
                 <div className='image-container'>
                     <img src='../assets/images/karenic-logo.png'/>
