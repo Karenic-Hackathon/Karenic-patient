@@ -1,0 +1,31 @@
+.records{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.search-control {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 350px;
+}
+.search-control > input{
+    height: 100%;
+    border:1px solid whitesmoke;
+    padding-left: 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    flex: 1;
+}
+.search-button {
+    background: #129610 !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+    height: 100%;
+    border-radius: 0 !important;
+}
+.record-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}

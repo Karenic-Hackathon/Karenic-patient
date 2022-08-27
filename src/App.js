@@ -4,6 +4,7 @@ import Header from './components/Header';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import ReportIncident from './pages/ReportIncident';
+import PatientRecords from './pages/PatientRecords';
 function App() {
   return (
     <div className="app">
@@ -14,6 +15,7 @@ function App() {
                 
                   <Route path='/' element={<Home/>}/>
                   <Route path='/reportIncident' element={<ReportIncident/>}/>
+                  <Route path='/patients/records' element={<PatientRecords/>}/>
             </Routes>
           </div>
         </BrowserRouter>

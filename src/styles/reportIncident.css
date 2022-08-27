@@ -1,0 +1,20 @@
+.report{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem !important;
+}
+.sendButton{
+    background-color: #129610 !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control{
+    width: 100vw!important;
+}
