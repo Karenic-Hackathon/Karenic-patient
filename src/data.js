@@ -20,9 +20,9 @@ export const patients = [
         }
     },
     {
-        "patient_id":"9701161056882",
+        "patient_id":"6701161056882",
         "patient_fname":"Felix",
-        "patient_dob":"2000/08/10",
+        "patient_dob":"1967/08/10",
         "patient_lname":"Washington",
         "patient_email":"washingtonf@yahoo.com",
         "patient_gender":"male",

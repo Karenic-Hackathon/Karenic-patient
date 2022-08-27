@@ -19,7 +19,19 @@ function PatientRecords() {
         patient[key].toLowerCase().includes(query))
         );
     }
-   
+    var today = new Date();
+    var thisYear = today.getFullYear();
+
+    const age = patients.map((patient)=>(
+        thisYear-parseInt(patient.patient_dob.substring(0,4))
+    ))
+    // const getAge = (year)=>(
+    //     thisYear-useryear
+    // )
+        
+
+   // console.log(dob)
+
   return (
     <div className='container'>
         <div className="search">
@@ -47,7 +59,7 @@ function PatientRecords() {
                 <div className='patient-bottom'>
                     <h4>ID: {patient.patient_id}</h4>
                     <h4>Names: {patient.patient_fname} {patient.patient_lname}</h4>
-                    <h4>Age: 12 years old</h4>
+                    <h4>Age:{thisYear-patient.patient_dob.substring(0,4)} years old</h4>
                     <h4>Gender: {patient.patient_gender}</h4>
                     <h4>Occupation: {patient.patient_occupation}</h4>
                 </div>
