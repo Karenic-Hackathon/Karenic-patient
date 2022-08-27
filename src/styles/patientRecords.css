@@ -16,10 +16,16 @@
     outline: none;
     flex: 1;
 } */
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .search{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    padding: 5px;
 }
 .search .search_input{
     border: 2 px !important;

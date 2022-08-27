@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/header.css'
 import logo from '../assets/images/karenic-logo.png'
-import { Avatar } from '@mui/material'
+
 export default function Header() {
   return (
     <div className='header'>

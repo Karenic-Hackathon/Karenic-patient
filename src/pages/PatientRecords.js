@@ -42,7 +42,7 @@ function PatientRecords() {
                     <li key ={patient.patient_id} className="patients_list">
                         <div className='patient'>
                 <div className='image-container'>
-                    <img src='../assets/images/karenic-logo.png'/>
+                    <img src={patient.patient_profile_image} alt={patient.patient_fname}/>
                 </div>
                 <div className='patient-bottom'>
                     <h4>ID: {patient.patient_id}</h4>
