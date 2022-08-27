@@ -10,13 +10,14 @@ import ReadMoreIcon from '@mui/icons-material/ReadMore';
 function PatientRecords() {
     
     const [query,setQuery] = useState("");
+    const searchKeys = ["patient_fname","patient_fname","patient_id","patient_gender","patient_occupation"]
+
+
     const search = (data)=>{
         return data.filter((patient)=>
-    patient.patient_fname.toLowerCase().includes(query)||
-    patient.patient_lname.toLowerCase().includes(query)||
-    patient.patient_id.includes(query)||
-    patient.patient_gender.toLowerCase().includes(query)||
-    patient.patient_occupation.toLowerCase().includes(query));
+        searchKeys.some((key)=>
+        patient[key].toLowerCase().includes(query))
+        );
     }
    
   return (
@@ -26,6 +27,7 @@ function PatientRecords() {
                 className='search_input'
                 id="outlined-helperText"
                 label="Search Patient"
+                onClick={(e)=>setQuery(e.target.value)} 
                 onChange={(e)=>setQuery(e.target.value)} 
             />                
             <Button startIcon={<SearchIcon/>}>Search</Button>
