@@ -1,0 +1,51 @@
+.header{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding:10px 5rem;
+    margin-bottom: 1rem;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;  
+    height: 100%;
+}
+.brand-name{
+    font-family: 'Poppins', sans-serif;
+}
+.logo-container > .image-container{
+    height: 100%;
+    flex: 1;
+}
+
+.logo-container > .image-container > img{
+    width: 100%;
+    height: 100%;
+    
+}
+.user-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.2rem;
+}
+.user-container > h2{
+    font-weight: 500;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+/* Responsive mobile*/
+
+@media (max-width:900px) {
+    .header{
+        padding: 10px;
+        height: 70px;
+    }
+    .logo-container > h2{
+        font-size: 16px;
+    }
+}
