@@ -1,0 +1,51 @@
+.modalRoot{
+    background: rgba(183, 182, 182, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+.new-record{
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.close-iconContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.new-record > form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.new-record-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cancelBtn{
+    width: 45% !important;
+    background: #E81E1E !important;
+    color:white !important;
+}
+.addBtn {
+    width: 45% !important;
+    color: white !important;
+    background: #129610 !important;
+}

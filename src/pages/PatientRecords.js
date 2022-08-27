@@ -12,7 +12,6 @@ function PatientRecords() {
     const [query,setQuery] = useState("");
     // const searchKeys = ["patient_fname","patient_fname","patient_id","patient_gender","patient_occupation"]
 
-
     // const search = (data)=>{
     //     return data.filter((patient)=>
     //     searchKeys.some((key)=>
