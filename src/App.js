@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import ReportIncident from './pages/ReportIncident';
 import PatientRecords from './pages/PatientRecords';
 import PatientDetails from './pages/PatientDetails';
+import DoctorDashBoard from './pages/Doctor';
 function App() {
   return (
     <div className="app">
@@ -17,6 +18,7 @@ function App() {
                   <Route path='/reportIncident' element={<ReportIncident/>}/>
                   <Route path='/patients/records' element={<PatientRecords/>}/>
                   <Route path='/patients/:id' element={<PatientDetails/>}/>
+                  <Route path='/doctor' element={<DoctorDashBoard/>}/>
             </Routes>
           </div>
         </BrowserRouter>
