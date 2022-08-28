@@ -7,9 +7,14 @@ import {useNavigate} from 'react-router-dom'
 import DashboardOption from '../components/DashboardOption';
 import Login from '../components/Login';
 import {useSelector} from 'react-redux'
+import PeopleIcon from '@mui/icons-material/People';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 export default function Home() {
     const navigate = useNavigate()
     const showLogin = useSelector((state)=>state.behaviours.showLogin)
+    const currentUser = useSelector((state)=>state.user.user)
+
   return (
     <div className='home'>
         <div className='home-content-actions'>
@@ -38,9 +43,48 @@ export default function Home() {
                 text='health care practitioner'
                 isRouting={false}
                 />
-                {
-                    
+                {currentUser && (currentUser.occupation=='Nurse' ||  currentUser.occupation=='Doctor'?
+                <DashboardOption
+                Icon={PeopleIcon}
+                bgColor='#F48825'
+                textColor={'white'}
+                text='Record Visit'
+                isRouting={false}
+                />:'')
                 }
+                {currentUser && (currentUser.occupation=='Doctor'?
+                <DashboardOption
+                Icon={CalendarMonthIcon}
+                bgColor='#F48825'
+                textColor={'white'}
+                text='View Appointments'
+                isRouting={true}
+                navigateUrl={'doctor/appointments'}
+                />:'')
+                }
+
+                {currentUser &&
+                 (currentUser.occupation=='Nurse' ||  
+                 currentUser.occupation=='Doctor' ||
+                  currentUser.occupation=='Paramedic'?
+                  <DashboardOption
+                  Icon={PeopleIcon}
+                  bgColor='#F48825'
+                  textColor={'white'}
+                  text='View Patients'
+                  isRouting={true}
+                  navigateUrl='patients/records'
+                  />:'')
+                }
+
+                  <DashboardOption
+                  Icon={MedicalInformationIcon}
+                  bgColor='#F48825'
+                  textColor={'white'}
+                  text='Find a doctor'
+                  isRouting={true}
+                  navigateUrl='/find/doctors'
+                  />           
             </div>
         </div>
        {showLogin && <Login/>} 

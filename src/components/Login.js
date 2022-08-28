@@ -20,9 +20,10 @@ export default function Login() {
       //after successful auth
         const userData = {
           id:staffId,
-          occupation:'Nurse'
+          occupation:'Doctor'
         }
         dispatch(login({...userData}))   
+        dispatch(closeLogin())
     }
   return (
     <div className='login'>
@@ -30,7 +31,7 @@ export default function Login() {
              <div className='login-top'>
                 <h4>Login</h4>             
             </div>
-            <form className='login-form' method='POST'>
+            <form className='login-form'>
             <TextField 
                 label='Staff ID'
                 fullWidth

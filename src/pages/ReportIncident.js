@@ -4,6 +4,9 @@ import MenuItem from '@mui/material/MenuItem';
 import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {useNavigate} from 'react-router-dom'
 
 export default function ReportIncident() {
 const [relationship, setRelationship] = React.useState('');
@@ -11,6 +14,7 @@ const [gender, setGender] = React.useState('');
 const [location,setLocation] = useState('')
 const [name,setName] = useState('')
 const [id,setId] = useState('')
+const navigate = useNavigate()
 
  const selectRelationship = (event) => {
     setRelationship(event.target.value);
@@ -18,6 +22,13 @@ const [id,setId] = useState('')
    const selectGender = (event) => {
     setGender(event.target.value);
   };
+
+  const handleReport = ()=>{
+    toast("Thank you");
+    setTimeout(() => {
+      navigate('/')
+    }, 1000);
+  }
 
   return (
     <div className='report'>
@@ -44,9 +55,11 @@ const [id,setId] = useState('')
             ))
         }
         </TextField>
-        <TextField label='Enter location'/>
-      <Button type='submit' className='sendButton'>Send</Button>
+        <TextField label='Enter address' required/>
+      <Button type='submit' className='sendButton'onClick={handleReport}>Send</Button>
+
     </form>
+         <ToastContainer />
     </div>
   )
 }

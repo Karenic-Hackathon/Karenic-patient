@@ -20,8 +20,8 @@ function App() {
                   <Route path='/reportIncident' element={<ReportIncident/>}/>
                   <Route path='/patients/records' element={<PatientRecords/>}/>
                   <Route path='/patients/:id' element={<PatientDetails/>}/>
-                  <Route path='/doctor' element={<DoctorDashBoard/>}/>
-                  <Route path='/doctors' element={<DoctorsList/>}/>
+                  <Route path='/doctor/appointments' element={<DoctorDashBoard/>}/>
+                  <Route path='/find/doctors' element={<DoctorsList/>}/>
                   <Route path='/doctors/:id' element={<DoctorDetails/>}/>
             </Routes>
           </div>
