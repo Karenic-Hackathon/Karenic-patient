@@ -5,6 +5,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import ReportIncident from './pages/ReportIncident';
 import PatientRecords from './pages/PatientRecords';
+import PatientDetails from './pages/PatientDetails';
 function App() {
   return (
     <div className="app">

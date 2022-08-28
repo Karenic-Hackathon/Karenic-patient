@@ -2,13 +2,24 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
 }
-
+.report h2{
+    text-align: center;
+    font-size: 26px;
+}
 form{
+    padding: 20px;
+    width: 800px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap:1rem !important;
+}
+.form{
+    display: flex;
+    justify-content: center;
 }
 .sendButton{
     background-color: #129610 !important;
