@@ -34,9 +34,10 @@ export default function PatientDetails() {
 
     const showAddModal = useSelector((state)=> state.behaviours.addModalShow)
     const dispatch = useDispatch()
+    
   return (
-    <div className='details'>
-        <h2>Details</h2>
+    <div className='details' id='medicalRecord'>
+        <h2>Medical Record</h2>
         <div className='details-container'>
         <ul>
         {
@@ -118,9 +119,9 @@ export default function PatientDetails() {
                             <td>Cape Town Hospital</td>
                         </tr>
                     </table>
-                    <Button startIcon={<AddIcon/>}
+                    <Button startIcon={<AddIcon/> }
                     onClick={()=>dispatch(openAddModal())}
-                    className='openModalBtn'>Add new record</Button>
+                    className='openModalBtn' id='addBtn'>Add new record</Button>
                 </div>
                 <div className='moreInfo'>
                     <div>

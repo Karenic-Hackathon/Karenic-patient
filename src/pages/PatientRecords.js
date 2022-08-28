@@ -50,7 +50,7 @@ function PatientRecords() {
     //Get year
     var today = new Date();
     var thisYear = today.getFullYear();
-        
+
   return (
     <div className='container'>
         <div className="search">

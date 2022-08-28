@@ -11,6 +11,7 @@ import {useSelector} from 'react-redux'
 import PeopleIcon from '@mui/icons-material/People';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
+
 export default function Home() {
     const navigate = useNavigate()
     const showLogin = useSelector((state)=>state.behaviours.showLogin)
@@ -19,13 +20,13 @@ export default function Home() {
   return (
     <div className='home'>
         <div className='home-content-actions'>
-             <p>Welcom to Karenic</p>
+             <p>Welcome to Karenic</p>
             <div className='reportActions home-content-top'>
-                <div className='symtom-checker' onClick={()=>navigate('/reportIncident')}>
+                <div className='symtom-checker'>
                     <HealthAndSafetyIcon fontSize='large' />
                     <h2>symtom Checker</h2>
                 </div>
-                <div className='report-incident'>
+                <div className='report-incident' onClick={()=>navigate('/reportIncident')}>
                     <ReportProblemIcon fontSize='large' />
                     <h2>Report incident</h2>
                 </div>
@@ -35,12 +36,81 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className='home-bottom-content'>
-                <p>Health Services</p>
-                <div className='services'>
-                  
-                </div>
+                           
+
+             <p>Welcom to Karenic</p>
+            <div className='home-content-top'>
+                <DashboardOption
+                Icon={HealthAndSafetyIcon}
+                bgColor='#129610'
+                textColor={'white'}
+                text='Symptom Checker'
+                isRouting={true}
+                navigateUrl='symptom'
+                />
+                <DashboardOption
+                Icon={ReportProblemIcon}
+                bgColor='#E81E1E'
+                textColor={'white'}
+                text='Report Incident'
+                navigateUrl={'reportIncident'}
+                isRouting={true}
+                />
+                <DashboardOption
+                Icon={LocalHospitalIcon}
+                bgColor='#F48825'
+                textColor={'white'}
+                text='health care practitioner'
+                isRouting={false}
+                />
+                {currentUser && (currentUser.occupation=='Nurse' ||  currentUser.occupation=='Doctor'?
+                <DashboardOption
+                Icon={PeopleIcon}
+                bgColor='#F48825'
+                textColor={'white'}
+                text='Record Visit'
+                isRouting={true}
+                navigateUrl='patients/1234'
+                />:'')
+                }
+                {currentUser && (currentUser.occupation=='Doctor'?
+                <DashboardOption
+                Icon={CalendarMonthIcon}
+                bgColor='#F48825'
+                textColor={'white'}
+                text='View Appointments'
+                isRouting={true}
+                navigateUrl={'doctor/appointments'}
+                />:'')
+                }
+
+                {currentUser &&
+                 (currentUser.occupation=='Nurse' ||  
+                 currentUser.occupation=='Doctor' ||
+                  currentUser.occupation=='Paramedic'?
+                  <DashboardOption
+                  Icon={PeopleIcon}
+                  bgColor='#F48825'
+                  textColor={'white'}
+                  text='View Patients'
+                  isRouting={true}
+                  navigateUrl='patients/records'
+                  />:'')
+                }
+
+                  <DashboardOption
+                  Icon={MedicalInformationIcon}
+                  bgColor='#F48825'
+                  textColor={'white'}
+                  text='Find a doctor'
+                  isRouting={true}
+                  navigateUrl='/find/doctors'
+                  />           
+            </div>
         </div>
-    </div>
+    //    {showLogin && <Login/>} 
+  
+    // </div>
+  
   )
 }

@@ -11,7 +11,7 @@ import { DatePicker } from '@mui/x-date-pickers';
 import { Button, IconButton } from '@mui/material';
 
 export default function BookingModal() {
-     const [appointmentDate, setDate] = React.useState(null);
+    const [appointmentDate, setDate] = React.useState(null);
     const dispatch = useDispatch()
     const [idNumber,setIdNumber]=useState('')
     const [time,setTime]=useState('')
@@ -28,7 +28,8 @@ const selectTime = (event) => {
   };
   
   const handleBooking = () =>{
-  dispatch(closeBookinModal())
+      //add booking to firebase
+      dispatch(closeBookinModal())
   }
   return (
     <div className='booking-modal'>
