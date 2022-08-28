@@ -15,10 +15,11 @@ export default function Home() {
     const showLogin = useSelector((state)=>state.behaviours.showLogin)
     const currentUser = useSelector((state)=>state.user.user)
 
+
   return (
     <div className='home'>
         <div className='home-content-actions'>
-             <p>Welcom to Karenic</p>
+             <p>Welcome to Karenic</p>
             <div className='home-content-top'>
                 <DashboardOption
                 Icon={HealthAndSafetyIcon}
@@ -77,7 +78,6 @@ export default function Home() {
                   navigateUrl='patients/records'
                   />:'')
                 }
-
                   <DashboardOption
                   Icon={MedicalInformationIcon}
                   bgColor='#F48825'

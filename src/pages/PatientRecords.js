@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import Patient from '../components/Patient';
 function PatientRecords() {
+
+    
   return (
     <div className='records'>
         <div className='records-top'>

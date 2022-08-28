@@ -20,12 +20,7 @@ export default function HistoryRecordModal() {
         dispatch(closeAddModal())
         
     }
-
-    useEffect(()=>{
-        // fetch patient data from firebase based on the patient id
-
-    },[])
-
+    
   return (
     <div className='modalRoot'>
         <div className='new-record'>

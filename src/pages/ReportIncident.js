@@ -24,10 +24,7 @@ const navigate = useNavigate()
   };
 
   const handleReport = ()=>{
-    toast("Thank you");
-    setTimeout(() => {
-      navigate('/')
-    }, 1000);
+      //add to firebase
   }
 
   return (
