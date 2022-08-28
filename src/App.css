@@ -3,6 +3,8 @@
   height: 100%;
 }
 .app-content{
+  display: flex;
+  align-items: center;
     width: 1000px;
     margin: auto;
     display: flex;

@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/reportIncident.css'
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
-import InputLabel from '@mui/material/InputLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 

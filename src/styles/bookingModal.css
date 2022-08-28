@@ -1,0 +1,43 @@
+.booking-modal{
+    background: rgba(183, 182, 182, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+.booking-content{
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.booking-top{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.booking-content > form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirmBooking{
+    width: 100% !important;
+    color: white !important;
+    background: #129610 !important;
+}

@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import {useDispatch} from 'react-redux'
 import { closeAddModal } from '../state/slices/behaviorSlice';
+import { IconButton } from '@mui/material';
 export default function HistoryRecordModal() {
     const [reason,setReason]=useState('')
     const [medication,setMedication]=useState('')
@@ -21,9 +22,9 @@ export default function HistoryRecordModal() {
             <div className='close-iconContainer' >
                 <h4>New Visit Record</h4>
                 
-                <div onClick={()=>dispatch(closeAddModal())}>
+                <IconButton onClick={()=>dispatch(closeAddModal())}>
                     <CloseIcon fontSize='large' />
-                </div>
+                </IconButton>
             </div>
             <form>
                 <TextField 
@@ -50,6 +51,7 @@ export default function HistoryRecordModal() {
                     <Button className='cancelBtn' onClick={()=>dispatch(closeAddModal())}> Cancel</Button>
                     <Button className='addBtn' onClick={()=>addVisit()}> Add Visit</Button>                
                 </div>
+                
             </form>
         </div>
     </div>
