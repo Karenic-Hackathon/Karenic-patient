@@ -1,0 +1,22 @@
+.appointment{   
+    height: 60px;
+    background: #F8F8F8;
+    box-shadow: -0.5px 1px 3px -1px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: all ease-in-out 0.18s;
+    cursor: pointer;
+}
+/* .appointment:hover{
+    transform: scale(0.98);
+} */
+.appointment > p{
+    font-family: 'Inter', sans-serif;
+}
+.complete{
+    background: #129610 !important;
+    color: white !important;
+}

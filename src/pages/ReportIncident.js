@@ -4,8 +4,12 @@ import '../styles/reportIncident.css'
 //Material Ui
 import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
 import MenuItem from '@mui/material/MenuItem';
+import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import {useNavigate} from 'react-router-dom'
 
 //firebase
 import {db} from '../../src/firebase-config';
@@ -21,6 +25,8 @@ const [location,setLocation] = useState('')
 const [name,setName] = useState('')
 const [id,setId] = useState('')
 const [time,setTime]=useState('');
+
+const navigate = useNavigate();
 
 // Get firebase Collection
 const recordCollectionRef = collection(db,"reportedIncident");
@@ -42,6 +48,12 @@ const recordCollectionRef = collection(db,"reportedIncident");
   };
 
 
+  const handleReport = ()=>{
+    toast("Thank you");
+    setTimeout(() => {
+      navigate('/')
+    }, 1000);
+  }
 
   return (
     <div className='report'>
@@ -101,7 +113,10 @@ const recordCollectionRef = collection(db,"reportedIncident");
               <Button onClick={submitRecord} className='sendButton'>Send</Button>
           </form>
       </div>
+
+      
    
+         <ToastContainer />
     </div>
   )
 }

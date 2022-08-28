@@ -1,0 +1,64 @@
+.doctor-details{
+    justify-self: center;
+    width: 380px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    border: 1px solid whitesmoke;
+    padding: 25px;
+}
+.doctor-details> h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.doctor-personal-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.doctor-info> h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.doctor-details-image{
+    width: 100%;
+    height: 250px;
+    background: rgba(192, 233, 236, 0.67);
+}
+.doctor-details-image > img{
+        width: 100%;
+        height: 100%;
+}
+.detailOption{
+    display: flex;    
+    align-items: center;
+    gap:0.3rem;
+    font-family: 'Inter', sans-serif;
+}
+.more-info{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.doctor-stats h4{
+    font-family: 'Inter', sans-serif;
+}
+.doctor-stats p{
+    font-family: 'Inter', sans-serif;
+}
+
+.book-btn{
+        height: 100% !important;
+        background: #129610 !important;
+        color: white !important;
+        border-radius: 0 !important;
+        border: none;
+        font-weight: 600 !important;
+}

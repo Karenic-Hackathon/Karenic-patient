@@ -1,7 +1,5 @@
 .home{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+
 }
 .home-content-actions{
     display: flex;
@@ -15,6 +13,7 @@
 }
 .home-content-top{
     display: flex;
+    flex-wrap: wrap;
     gap:2rem;
 }
 .home-content-top > p{
@@ -38,7 +37,6 @@
 }
 
 .report-incident{
-    display: flex;
      width: 250px;
     height: 250px;
     display: flex;

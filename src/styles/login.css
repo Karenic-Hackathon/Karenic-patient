@@ -1,0 +1,45 @@
+.login{
+    background: rgba(183, 182, 182, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+.login-content{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+
+}
+.login-top{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18pt;
+}
+.login-form{
+    width: 100%;
+}
+.loginBtn{
+    width: 100%;
+    color: white !important;
+    background: #129610 !important;
+}
+.loginCancelBtn{
+    background: #E81E1E !important;
+    color:white !important;
+}

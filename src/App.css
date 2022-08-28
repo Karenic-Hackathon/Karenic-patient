@@ -5,7 +5,9 @@
   height: 100%;
 }
 .app-content{
-    width: 900px;
+  display: flex;
+  align-items: center;
+    width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
