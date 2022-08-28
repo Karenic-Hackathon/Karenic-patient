@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <div className='home'>
         <div className='home-content-actions'>
-             <p>Welcome to Karenic</p>
-            <div className='reportActions home-content-top'>
+             {/* <p>Welcome to Karenic</p> */}
+            {/* <div className='reportActions home-content-top'>
                 <div className='symtom-checker'>
                     <HealthAndSafetyIcon fontSize='large' />
                     <h2>symtom Checker</h2>
@@ -34,8 +34,8 @@ export default function Home() {
                     <LocalHospitalIcon fontSize='large' />
                     <h2>Doctor Dashboard</h2>
                 </div>
-            </div>
-        </div>
+            </div> */}
+        {/* </div> */}
                            
 
              <p>Welcom to Karenic</p>
@@ -108,9 +108,9 @@ export default function Home() {
                   />           
             </div>
         </div>
-    //    {showLogin && <Login/>} 
+       {showLogin && <Login/>} 
   
-    // </div>
+    </div>
   
   )
 }

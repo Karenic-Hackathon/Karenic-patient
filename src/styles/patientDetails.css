@@ -11,12 +11,24 @@
 }
 
 .details-container{
-    width: 100%;
-    border:1px solid whitesmoke;
-    padding: 15px;
+    width: 100vw;
+    border: 1px solid whitesmoke;
+    padding: 105px;
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
     gap: 1rem;
+
+}
+.visit-history-details{
+    display: flex;
+    margin-top: 20px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
 }
 .details-container > .top{
     display: flex;
@@ -25,6 +37,7 @@
 .image-store {
    
     width: 150px;
+    margin-left: 150px;
     height: 150px;
     background: rgb(194, 190, 190);
     border-radius: 50%;  
@@ -49,13 +62,18 @@
 table{
     width: 100%;
     border: 2px solid whitesmoke;
+    padding: 20px;
 }
 table > tr {
     text-align: center;
+    padding: 10px;
 }
 
 .openModalBtn{
         width: 200px;
         color: white !important;
         background: #129610 !important;
+}
+li{
+    display: flex;
 }

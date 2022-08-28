@@ -55,8 +55,9 @@ export default function PatientDetails() {
                     <img src='https://statinfer.com/wp-content/uploads/dummy-user.png'/>
                 </div>        
             </div>
-             <h4>Diagnosis : Asthma </h4>
              <div className='visit-history'>
+             <h4>Diagnosis : Asthma </h4>
+
                 <h4>Visit History</h4>
                 <div className='visit-history-details'>
                     <table>
@@ -68,22 +69,22 @@ export default function PatientDetails() {
                         </tr>
                         <tr>
                             <td>06-03-2022</td>
-                            <td>06-03-2022</td>
+                            <td>cold</td>
                             <td>06-03-2022</td>
                             <td>Cape Town Hospital</td>
                         </tr>
                     </table>
+                    <div className='moreInfo'>
+                    <div>
+                        <h4>{patient.patient_diagnosis}</h4>
+                       
+                    </div>
+                </div>
                     <Button startIcon={<AddIcon/>}
                     onClick={()=>dispatch(openAddModal())}
                     className='openModalBtn'>Add new record</Button>
                 </div>
-                <div className='moreInfo'>
-                    <div>
-                        <h4>Allergies</h4>
-                        <p>allergies1</p>
-                        <p>allergies1</p>
-                    </div>
-                </div>
+                
              </div>
                         </div>
                 </li>
