@@ -38,35 +38,7 @@ export default function Home() {
         <div className='home-bottom-content'>
                 <p>Health Services</p>
                 <div className='services'>
-                    {/* Possibly Read these from a simple data array or db*/}
-                    <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                    <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                    <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                    <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                                         <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                                         <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
-                                         <HealthService 
-                    service={'Medical Record'}
-                     background='lightgray'
-                     Icon={ReportProblemIcon}/>
+                  
                 </div>
         </div>
     </div>

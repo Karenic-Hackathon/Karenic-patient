@@ -1,10 +1,9 @@
-import React, { useState ,useEffect} from 'react'
+import React, { useState ,useEffect,useNavigate} from 'react'
 import '../styles/reportIncident.css'
 
 //Material Ui
 import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
 import MenuItem from '@mui/material/MenuItem';
-import { relationShipOptions,Gender } from '../helpers/ReportIncident-data';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { ToastContainer, toast } from 'react-toastify';

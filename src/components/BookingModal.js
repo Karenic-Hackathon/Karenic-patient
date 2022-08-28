@@ -9,6 +9,7 @@ import { closeBookinModal } from '../state/slices/behaviorSlice';
 import TextField from '@mui/material/TextField';
 import { DatePicker } from '@mui/x-date-pickers';
 import { Button, IconButton } from '@mui/material';
+
 export default function BookingModal() {
      const [appointmentDate, setDate] = React.useState(null);
     const dispatch = useDispatch()
