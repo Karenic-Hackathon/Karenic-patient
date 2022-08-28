@@ -49,7 +49,8 @@ export default function Home() {
                 bgColor='#F48825'
                 textColor={'white'}
                 text='Record Visit'
-                isRouting={false}
+                isRouting={true}
+                navigateUrl='patients/1234'
                 />:'')
                 }
                 {currentUser && (currentUser.occupation=='Doctor'?
